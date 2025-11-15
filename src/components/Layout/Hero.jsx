@@ -1,8 +1,11 @@
+// src/components/Layout/Hero.jsx
 import React from "react";
 import { Building2, Globe } from "lucide-react";
 
 const Hero = ({ user }) => (
-  <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8 rounded-2xl mb-8 shadow-xl relative overflow-hidden border border-slate-700">
+  // PERBAIKAN RESPONSIVE: Tambahkan padding-top di mobile (pt-20) agar ada ruang untuk tombol menu
+  // Hapus padding-top di desktop (lg:pt-8)
+  <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8 pt-20 lg:pt-8 rounded-2xl shadow-xl relative overflow-hidden border border-slate-700">
     <div className="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
 
     <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
